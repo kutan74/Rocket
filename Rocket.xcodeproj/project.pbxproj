@@ -10,11 +10,10 @@
 		9E6FE98AB57D8717FBA9B9FE /* Pods_Rocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52885589E55EA26B3B2A68F2 /* Pods_Rocket.framework */; };
 		A04AD00923FA636D005BB549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AD00823FA636D005BB549 /* AppDelegate.swift */; };
 		A04AD00B23FA636D005BB549 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AD00A23FA636D005BB549 /* SceneDelegate.swift */; };
-		A04AD00D23FA636D005BB549 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AD00C23FA636D005BB549 /* ViewController.swift */; };
-		A04AD01023FA636D005BB549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04AD00E23FA636D005BB549 /* Main.storyboard */; };
 		A04AD01323FA636D005BB549 /* Rocket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A04AD01123FA636D005BB549 /* Rocket.xcdatamodeld */; };
 		A04AD01523FA636E005BB549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04AD01423FA636E005BB549 /* Assets.xcassets */; };
 		A04AD01823FA636E005BB549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04AD01623FA636E005BB549 /* LaunchScreen.storyboard */; };
+		A04AD02423FA64B0005BB549 /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AD02323FA64B0005BB549 /* CanvasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +23,11 @@
 		A04AD00523FA636D005BB549 /* Rocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04AD00823FA636D005BB549 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A04AD00A23FA636D005BB549 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A04AD00C23FA636D005BB549 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A04AD00F23FA636D005BB549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A04AD01223FA636D005BB549 /* Rocket.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rocket.xcdatamodel; sourceTree = "<group>"; };
 		A04AD01423FA636E005BB549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A04AD01723FA636E005BB549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A04AD01923FA636E005BB549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A04AD02323FA64B0005BB549 /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +48,6 @@
 				79B09A848E0A16D8D25CDB6F /* Pods-Rocket.debug.xcconfig */,
 				79AECBC9FF28A9DE870E8B2A /* Pods-Rocket.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,16 +80,47 @@
 		A04AD00723FA636D005BB549 /* Rocket */ = {
 			isa = PBXGroup;
 			children = (
+				A04AD02223FA64A1005BB549 /* Controllers */,
+				A04AD02123FA649D005BB549 /* Views */,
+				A04AD02023FA6498005BB549 /* Models */,
+				A04AD01F23FA6466005BB549 /* Extensions */,
 				A04AD00823FA636D005BB549 /* AppDelegate.swift */,
 				A04AD00A23FA636D005BB549 /* SceneDelegate.swift */,
-				A04AD00C23FA636D005BB549 /* ViewController.swift */,
-				A04AD00E23FA636D005BB549 /* Main.storyboard */,
 				A04AD01423FA636E005BB549 /* Assets.xcassets */,
 				A04AD01623FA636E005BB549 /* LaunchScreen.storyboard */,
 				A04AD01923FA636E005BB549 /* Info.plist */,
 				A04AD01123FA636D005BB549 /* Rocket.xcdatamodeld */,
 			);
 			path = Rocket;
+			sourceTree = "<group>";
+		};
+		A04AD01F23FA6466005BB549 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A04AD02023FA6498005BB549 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A04AD02123FA649D005BB549 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A04AD02223FA64A1005BB549 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A04AD02323FA64B0005BB549 /* CanvasViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,7 +184,6 @@
 			files = (
 				A04AD01823FA636E005BB549 /* LaunchScreen.storyboard in Resources */,
 				A04AD01523FA636E005BB549 /* Assets.xcassets in Resources */,
-				A04AD01023FA636D005BB549 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,9 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A04AD00D23FA636D005BB549 /* ViewController.swift in Sources */,
 				A04AD00923FA636D005BB549 /* AppDelegate.swift in Sources */,
 				A04AD00B23FA636D005BB549 /* SceneDelegate.swift in Sources */,
+				A04AD02423FA64B0005BB549 /* CanvasViewController.swift in Sources */,
 				A04AD01323FA636D005BB549 /* Rocket.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,14 +229,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A04AD00E23FA636D005BB549 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A04AD00F23FA636D005BB549 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A04AD01623FA636E005BB549 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -350,7 +369,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rocket.app.Rocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -369,7 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rocket.app.Rocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
