@@ -8,18 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		9E6FE98AB57D8717FBA9B9FE /* Pods_Rocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52885589E55EA26B3B2A68F2 /* Pods_Rocket.framework */; };
+		A00CC6AF23FBBFC900A1AE0B /* UIView+DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00CC6AE23FBBFC900A1AE0B /* UIView+DropShadow.swift */; };
+		A00CC6B323FBEDB500A1AE0B /* ScalableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00CC6B223FBEDB500A1AE0B /* ScalableView.swift */; };
+		A00CC6B623FBEE4800A1AE0B /* Scaleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00CC6B523FBEE4800A1AE0B /* Scaleable.swift */; };
 		A04AD00923FA636D005BB549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AD00823FA636D005BB549 /* AppDelegate.swift */; };
 		A04AD00B23FA636D005BB549 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AD00A23FA636D005BB549 /* SceneDelegate.swift */; };
 		A04AD01323FA636D005BB549 /* Rocket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A04AD01123FA636D005BB549 /* Rocket.xcdatamodeld */; };
 		A04AD01523FA636E005BB549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04AD01423FA636E005BB549 /* Assets.xcassets */; };
 		A04AD01823FA636E005BB549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04AD01623FA636E005BB549 /* LaunchScreen.storyboard */; };
 		A04AD02423FA64B0005BB549 /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AD02323FA64B0005BB549 /* CanvasViewController.swift */; };
+		A04AD02623FA6577005BB549 /* UIView+NSLayoutConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AD02523FA6577005BB549 /* UIView+NSLayoutConstraints.swift */; };
+		A04AD02823FA6589005BB549 /* UIFont+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AD02723FA6589005BB549 /* UIFont+Scale.swift */; };
+		A04AD02A23FA689B005BB549 /* CanvasElementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AD02923FA689B005BB549 /* CanvasElementsView.swift */; };
+		A04AD02C23FA68B8005BB549 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AD02B23FA68B8005BB549 /* CanvasView.swift */; };
+		A04AD03123FBBB6A005BB549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04AD03023FBBB6A005BB549 /* Main.storyboard */; };
+		A04AD03423FBBBCB005BB549 /* ArtboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AD03323FBBBCB005BB549 /* ArtboardView.swift */; };
+		A04AD03623FBBCB2005BB549 /* CanvasDrawRectangleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AD03523FBBCB2005BB549 /* CanvasDrawRectangleButtonView.swift */; };
+		A04AD03A23FBBCD2005BB549 /* CanvasRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AD03923FBBCD2005BB549 /* CanvasRectangle.swift */; };
+		A0BD1CE323FBBF1600BDA585 /* ScalePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BD1CE223FBBF1600BDA585 /* ScalePoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52885589E55EA26B3B2A68F2 /* Pods_Rocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79AECBC9FF28A9DE870E8B2A /* Pods-Rocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rocket.release.xcconfig"; path = "Target Support Files/Pods-Rocket/Pods-Rocket.release.xcconfig"; sourceTree = "<group>"; };
 		79B09A848E0A16D8D25CDB6F /* Pods-Rocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rocket.debug.xcconfig"; path = "Target Support Files/Pods-Rocket/Pods-Rocket.debug.xcconfig"; sourceTree = "<group>"; };
+		A00CC6AE23FBBFC900A1AE0B /* UIView+DropShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+DropShadow.swift"; sourceTree = "<group>"; };
+		A00CC6B223FBEDB500A1AE0B /* ScalableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalableView.swift; sourceTree = "<group>"; };
+		A00CC6B523FBEE4800A1AE0B /* Scaleable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scaleable.swift; sourceTree = "<group>"; };
 		A04AD00523FA636D005BB549 /* Rocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04AD00823FA636D005BB549 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A04AD00A23FA636D005BB549 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +43,15 @@
 		A04AD01723FA636E005BB549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A04AD01923FA636E005BB549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A04AD02323FA64B0005BB549 /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
+		A04AD02523FA6577005BB549 /* UIView+NSLayoutConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NSLayoutConstraints.swift"; sourceTree = "<group>"; };
+		A04AD02723FA6589005BB549 /* UIFont+Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Scale.swift"; sourceTree = "<group>"; };
+		A04AD02923FA689B005BB549 /* CanvasElementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasElementsView.swift; sourceTree = "<group>"; };
+		A04AD02B23FA68B8005BB549 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		A04AD03023FBBB6A005BB549 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A04AD03323FBBBCB005BB549 /* ArtboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtboardView.swift; sourceTree = "<group>"; };
+		A04AD03523FBBCB2005BB549 /* CanvasDrawRectangleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasDrawRectangleButtonView.swift; sourceTree = "<group>"; };
+		A04AD03923FBBCD2005BB549 /* CanvasRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasRectangle.swift; sourceTree = "<group>"; };
+		A0BD1CE223FBBF1600BDA585 /* ScalePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalePoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +83,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A00CC6B423FBEE4100A1AE0B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A00CC6B523FBEE4800A1AE0B /* Scaleable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		A04ACFFC23FA636C005BB549 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +112,7 @@
 		A04AD00723FA636D005BB549 /* Rocket */ = {
 			isa = PBXGroup;
 			children = (
+				A00CC6B423FBEE4100A1AE0B /* Protocols */,
 				A04AD02223FA64A1005BB549 /* Controllers */,
 				A04AD02123FA649D005BB549 /* Views */,
 				A04AD02023FA6498005BB549 /* Models */,
@@ -90,6 +123,7 @@
 				A04AD01623FA636E005BB549 /* LaunchScreen.storyboard */,
 				A04AD01923FA636E005BB549 /* Info.plist */,
 				A04AD01123FA636D005BB549 /* Rocket.xcdatamodeld */,
+				A04AD03023FBBB6A005BB549 /* Main.storyboard */,
 			);
 			path = Rocket;
 			sourceTree = "<group>";
@@ -97,6 +131,9 @@
 		A04AD01F23FA6466005BB549 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A04AD02523FA6577005BB549 /* UIView+NSLayoutConstraints.swift */,
+				A04AD02723FA6589005BB549 /* UIFont+Scale.swift */,
+				A00CC6AE23FBBFC900A1AE0B /* UIView+DropShadow.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -111,6 +148,10 @@
 		A04AD02123FA649D005BB549 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A0BD1CE423FBBF1A00BDA585 /* Common */,
+				A04AD03223FBBBB6005BB549 /* ArtBoards */,
+				A04AD02D23FA6947005BB549 /* CanvasElements */,
+				A04AD02923FA689B005BB549 /* CanvasElementsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -119,8 +160,59 @@
 			isa = PBXGroup;
 			children = (
 				A04AD02323FA64B0005BB549 /* CanvasViewController.swift */,
+				A04AD02B23FA68B8005BB549 /* CanvasView.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A04AD02D23FA6947005BB549 /* CanvasElements */ = {
+			isa = PBXGroup;
+			children = (
+				A04AD03823FBBCC8005BB549 /* UIElements */,
+				A04AD03723FBBCC1005BB549 /* Buttons */,
+			);
+			path = CanvasElements;
+			sourceTree = "<group>";
+		};
+		A04AD03223FBBBB6005BB549 /* ArtBoards */ = {
+			isa = PBXGroup;
+			children = (
+				A04AD03323FBBBCB005BB549 /* ArtboardView.swift */,
+			);
+			path = ArtBoards;
+			sourceTree = "<group>";
+		};
+		A04AD03723FBBCC1005BB549 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				A04AD03523FBBCB2005BB549 /* CanvasDrawRectangleButtonView.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		A04AD03823FBBCC8005BB549 /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				A0BD1CE123FBBF0100BDA585 /* CanvasRectangle */,
+			);
+			path = UIElements;
+			sourceTree = "<group>";
+		};
+		A0BD1CE123FBBF0100BDA585 /* CanvasRectangle */ = {
+			isa = PBXGroup;
+			children = (
+				A04AD03923FBBCD2005BB549 /* CanvasRectangle.swift */,
+			);
+			path = CanvasRectangle;
+			sourceTree = "<group>";
+		};
+		A0BD1CE423FBBF1A00BDA585 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A0BD1CE223FBBF1600BDA585 /* ScalePoint.swift */,
+				A00CC6B223FBEDB500A1AE0B /* ScalableView.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A04AD03123FBBB6A005BB549 /* Main.storyboard in Resources */,
 				A04AD01823FA636E005BB549 /* LaunchScreen.storyboard in Resources */,
 				A04AD01523FA636E005BB549 /* Assets.xcassets in Resources */,
 			);
@@ -220,9 +313,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04AD00923FA636D005BB549 /* AppDelegate.swift in Sources */,
+				A04AD03423FBBBCB005BB549 /* ArtboardView.swift in Sources */,
 				A04AD00B23FA636D005BB549 /* SceneDelegate.swift in Sources */,
+				A04AD02C23FA68B8005BB549 /* CanvasView.swift in Sources */,
+				A04AD02A23FA689B005BB549 /* CanvasElementsView.swift in Sources */,
+				A00CC6B623FBEE4800A1AE0B /* Scaleable.swift in Sources */,
+				A04AD03A23FBBCD2005BB549 /* CanvasRectangle.swift in Sources */,
+				A04AD02623FA6577005BB549 /* UIView+NSLayoutConstraints.swift in Sources */,
+				A04AD02823FA6589005BB549 /* UIFont+Scale.swift in Sources */,
 				A04AD02423FA64B0005BB549 /* CanvasViewController.swift in Sources */,
+				A0BD1CE323FBBF1600BDA585 /* ScalePoint.swift in Sources */,
+				A04AD03623FBBCB2005BB549 /* CanvasDrawRectangleButtonView.swift in Sources */,
 				A04AD01323FA636D005BB549 /* Rocket.xcdatamodeld in Sources */,
+				A00CC6AF23FBBFC900A1AE0B /* UIView+DropShadow.swift in Sources */,
+				A00CC6B323FBEDB500A1AE0B /* ScalableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
