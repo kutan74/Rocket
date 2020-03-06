@@ -7,17 +7,24 @@
 //
 
 import UIKit
+import WebKit
+import Moya
+import OAuthSwift
 
 class CanvasViewController: UIViewController {    
     private let subView = CanvasView()
-    
     private var currentSelectedCanvasElement: Scaleable?
+    private var webView: WKWebView!
+    
+    private var oauthswift: OAuthSwift!
     
     override func loadView() {
         view = UIView()
         view.backgroundColor = .darkGray
         
         layoutViews()
+        
+        getAuthToken()
     }
 }
 
@@ -75,3 +82,76 @@ extension CanvasViewController {
     }
 }
 
+// MARK: Network
+
+extension CanvasViewController {
+    func authZeplin() {
+        let authCode = oauthswift.client.credential.oauthToken
+        let token = authCode
+        let authPlugin = AccessTokenPlugin { _ in token }
+        
+        let provider = MoyaProvider<RocketService>(plugins: [authPlugin])
+        provider.request(.projects) { result in
+            switch result {
+            case let .success(moyaResponse):
+                let data = moyaResponse.data
+                self.getProjectScreens()
+            case let .failure(error):
+                print("error")
+            }
+        }
+    }
+    
+    func getProjectScreens() {
+        let authCode = oauthswift.client.credential.oauthToken
+        let token = authCode
+        let authPlugin = AccessTokenPlugin { _ in token }
+        
+        let provider = MoyaProvider<RocketService>(plugins: [authPlugin])
+        provider.request(.projectScreens(projectId: "5e2d78e136436754bc9b931f")) { result in
+            switch result {
+            case let .success(moyaResponse):
+                let data = moyaResponse.data
+                
+            case let .failure(error):
+                print("error")
+            }
+        }
+    }
+    
+    func getAuthToken() {
+        let oauthswift = OAuth2Swift(
+            consumerKey:    "5e566b3c6fd68073c489d5a0",
+            consumerSecret: "4ffda85495a941e350b4c9a1f15ce26c1f7562db3a18750832b2bfaf5fa52de4",
+            authorizeUrl:   "https://api.zeplin.dev/v1/oauth/authorize",
+            accessTokenUrl: "https://api.zeplin.dev/v1/oauth/token",
+            responseType:   "code"
+        )
+        self.oauthswift = oauthswift
+        oauthswift.authorizeURLHandler = getURLHandler()
+        let state = generateState(withLength: 20)
+        
+        let _ = oauthswift.authorize(
+            withCallbackURL: URL(string: "com.rocket.app.Rocket://zeplin-auth")!,
+            scope: "",
+            state: state) { result in
+                switch result {
+                case .success(let (credential, _, _)):
+                    print("zeplin auth token: \(credential.oauthToken)")
+                    self.authZeplin()
+                case .failure(let error):
+                    print(error.description)
+                }
+        }
+    }
+    
+    
+    
+    func getURLHandler() -> OAuthSwiftURLHandlerType {
+        return OAuthSwiftOpenURLExternally.sharedInstance
+    }
+}
+
+extension CanvasViewController: WKNavigationDelegate {
+    
+}

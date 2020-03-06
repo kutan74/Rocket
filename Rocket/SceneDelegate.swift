@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import OAuthSwift
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -18,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
-        let viewController = CanvasViewController()
+        let viewController = SplashScreenViewController()
         if let windowScene = scene as? UIWindowScene {
             self.window = UIWindow(windowScene: windowScene)
             self.window?.rootViewController = viewController
@@ -57,6 +58,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
 
+    
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+            guard let url = URLContexts.first?.url else {
+                return
+            }
+            if (url.host == "zeplin-auth") {
+                OAuthSwift.handle(url: url)
+            }
+    }
 
 }
 

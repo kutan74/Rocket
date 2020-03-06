@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		A00CC6AF23FBBFC900A1AE0B /* UIView+DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00CC6AE23FBBFC900A1AE0B /* UIView+DropShadow.swift */; };
 		A00CC6B323FBEDB500A1AE0B /* ScalableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00CC6B223FBEDB500A1AE0B /* ScalableView.swift */; };
 		A00CC6B623FBEE4800A1AE0B /* Scaleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00CC6B523FBEE4800A1AE0B /* Scaleable.swift */; };
+		A00CC6B924069D9900A1AE0B /* RocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00CC6B824069D9900A1AE0B /* RocketService.swift */; };
 		A04AD00923FA636D005BB549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AD00823FA636D005BB549 /* AppDelegate.swift */; };
 		A04AD00B23FA636D005BB549 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AD00A23FA636D005BB549 /* SceneDelegate.swift */; };
 		A04AD01323FA636D005BB549 /* Rocket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A04AD01123FA636D005BB549 /* Rocket.xcdatamodeld */; };
@@ -25,7 +26,15 @@
 		A04AD03423FBBBCB005BB549 /* ArtboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AD03323FBBBCB005BB549 /* ArtboardView.swift */; };
 		A04AD03623FBBCB2005BB549 /* CanvasDrawRectangleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AD03523FBBCB2005BB549 /* CanvasDrawRectangleButtonView.swift */; };
 		A04AD03A23FBBCD2005BB549 /* CanvasRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AD03923FBBCD2005BB549 /* CanvasRectangle.swift */; };
+		A066B41A24113C400019C931 /* ConnecToZeplinButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066B41924113C400019C931 /* ConnecToZeplinButton.swift */; };
+		A066B41D24116F350019C931 /* ZeplinOauthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066B41C24116F350019C931 /* ZeplinOauthHandler.swift */; };
 		A0BD1CE323FBBF1600BDA585 /* ScalePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BD1CE223FBBF1600BDA585 /* ScalePoint.swift */; };
+		A0F47245240F400000D2AD84 /* ZeplinToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F47244240F400000D2AD84 /* ZeplinToken.swift */; };
+		A0FAAEDA2410FD0A000A77D9 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FAAED92410FD0A000A77D9 /* SplashScreenViewController.swift */; };
+		A0FAAEDC2410FD2A000A77D9 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FAAEDB2410FD2A000A77D9 /* SplashScreenView.swift */; };
+		A0FAAEDE2410FDB5000A77D9 /* UIColor+Zeplin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FAAEDD2410FDB5000A77D9 /* UIColor+Zeplin.swift */; };
+		A0FAAEE22410FEA0000A77D9 /* AuthenticateWithZeplinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FAAEE12410FEA0000A77D9 /* AuthenticateWithZeplinViewController.swift */; };
+		A0FAAEE42410FECF000A77D9 /* AuthenticateWithZeplinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FAAEE32410FECF000A77D9 /* AuthenticateWithZeplinView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +44,7 @@
 		A00CC6AE23FBBFC900A1AE0B /* UIView+DropShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+DropShadow.swift"; sourceTree = "<group>"; };
 		A00CC6B223FBEDB500A1AE0B /* ScalableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalableView.swift; sourceTree = "<group>"; };
 		A00CC6B523FBEE4800A1AE0B /* Scaleable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scaleable.swift; sourceTree = "<group>"; };
+		A00CC6B824069D9900A1AE0B /* RocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketService.swift; sourceTree = "<group>"; };
 		A04AD00523FA636D005BB549 /* Rocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04AD00823FA636D005BB549 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A04AD00A23FA636D005BB549 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +61,15 @@
 		A04AD03323FBBBCB005BB549 /* ArtboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtboardView.swift; sourceTree = "<group>"; };
 		A04AD03523FBBCB2005BB549 /* CanvasDrawRectangleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasDrawRectangleButtonView.swift; sourceTree = "<group>"; };
 		A04AD03923FBBCD2005BB549 /* CanvasRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasRectangle.swift; sourceTree = "<group>"; };
+		A066B41924113C400019C931 /* ConnecToZeplinButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnecToZeplinButton.swift; sourceTree = "<group>"; };
+		A066B41C24116F350019C931 /* ZeplinOauthHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeplinOauthHandler.swift; sourceTree = "<group>"; };
 		A0BD1CE223FBBF1600BDA585 /* ScalePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalePoint.swift; sourceTree = "<group>"; };
+		A0F47244240F400000D2AD84 /* ZeplinToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeplinToken.swift; sourceTree = "<group>"; };
+		A0FAAED92410FD0A000A77D9 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		A0FAAEDB2410FD2A000A77D9 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		A0FAAEDD2410FDB5000A77D9 /* UIColor+Zeplin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Zeplin.swift"; sourceTree = "<group>"; };
+		A0FAAEE12410FEA0000A77D9 /* AuthenticateWithZeplinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateWithZeplinViewController.swift; sourceTree = "<group>"; };
+		A0FAAEE32410FECF000A77D9 /* AuthenticateWithZeplinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateWithZeplinView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +109,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		A00CC6B724069D8D00A1AE0B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A00CC6B824069D9900A1AE0B /* RocketService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		A04ACFFC23FA636C005BB549 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +138,8 @@
 		A04AD00723FA636D005BB549 /* Rocket */ = {
 			isa = PBXGroup;
 			children = (
+				A066B41B24116F270019C931 /* LogicHandlers */,
+				A00CC6B724069D8D00A1AE0B /* Network */,
 				A00CC6B423FBEE4100A1AE0B /* Protocols */,
 				A04AD02223FA64A1005BB549 /* Controllers */,
 				A04AD02123FA649D005BB549 /* Views */,
@@ -134,6 +162,7 @@
 				A04AD02523FA6577005BB549 /* UIView+NSLayoutConstraints.swift */,
 				A04AD02723FA6589005BB549 /* UIFont+Scale.swift */,
 				A00CC6AE23FBBFC900A1AE0B /* UIView+DropShadow.swift */,
+				A0FAAEDD2410FDB5000A77D9 /* UIColor+Zeplin.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -141,6 +170,7 @@
 		A04AD02023FA6498005BB549 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A0F47244240F400000D2AD84 /* ZeplinToken.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -159,6 +189,7 @@
 		A04AD02223FA64A1005BB549 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A0FAAED82410FD00000A77D9 /* Onboarding */,
 				A04AD02323FA64B0005BB549 /* CanvasViewController.swift */,
 				A04AD02B23FA68B8005BB549 /* CanvasView.swift */,
 			);
@@ -198,6 +229,22 @@
 			path = UIElements;
 			sourceTree = "<group>";
 		};
+		A066B41B24116F270019C931 /* LogicHandlers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LogicHandlers;
+			sourceTree = "<group>";
+		};
+		A066B41E24116F590019C931 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0FAAEE32410FECF000A77D9 /* AuthenticateWithZeplinView.swift */,
+				A066B41924113C400019C931 /* ConnecToZeplinButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A0BD1CE123FBBF0100BDA585 /* CanvasRectangle */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +262,34 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		A0FAAED82410FD00000A77D9 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A0FAAEE02410FE93000A77D9 /* ZeplinAuthOnboarding */,
+				A0FAAEDF2410FE8C000A77D9 /* Splash */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		A0FAAEDF2410FE8C000A77D9 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				A0FAAED92410FD0A000A77D9 /* SplashScreenViewController.swift */,
+				A0FAAEDB2410FD2A000A77D9 /* SplashScreenView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		A0FAAEE02410FE93000A77D9 /* ZeplinAuthOnboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A066B41E24116F590019C931 /* Views */,
+				A066B41C24116F350019C931 /* ZeplinOauthHandler.swift */,
+				A0FAAEE12410FEA0000A77D9 /* AuthenticateWithZeplinViewController.swift */,
+			);
+			path = ZeplinAuthOnboarding;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,6 +301,7 @@
 				A04AD00123FA636D005BB549 /* Sources */,
 				A04AD00223FA636D005BB549 /* Frameworks */,
 				A04AD00323FA636D005BB549 /* Resources */,
+				EE0353C67DE7D05F0343C84E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -305,6 +381,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EE0353C67DE7D05F0343C84E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rocket/Pods-Rocket-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rocket/Pods-Rocket-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rocket/Pods-Rocket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -313,18 +406,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04AD00923FA636D005BB549 /* AppDelegate.swift in Sources */,
+				A0FAAEE22410FEA0000A77D9 /* AuthenticateWithZeplinViewController.swift in Sources */,
 				A04AD03423FBBBCB005BB549 /* ArtboardView.swift in Sources */,
+				A0FAAEDA2410FD0A000A77D9 /* SplashScreenViewController.swift in Sources */,
+				A066B41A24113C400019C931 /* ConnecToZeplinButton.swift in Sources */,
 				A04AD00B23FA636D005BB549 /* SceneDelegate.swift in Sources */,
 				A04AD02C23FA68B8005BB549 /* CanvasView.swift in Sources */,
 				A04AD02A23FA689B005BB549 /* CanvasElementsView.swift in Sources */,
 				A00CC6B623FBEE4800A1AE0B /* Scaleable.swift in Sources */,
+				A0FAAEE42410FECF000A77D9 /* AuthenticateWithZeplinView.swift in Sources */,
 				A04AD03A23FBBCD2005BB549 /* CanvasRectangle.swift in Sources */,
+				A00CC6B924069D9900A1AE0B /* RocketService.swift in Sources */,
+				A0FAAEDE2410FDB5000A77D9 /* UIColor+Zeplin.swift in Sources */,
 				A04AD02623FA6577005BB549 /* UIView+NSLayoutConstraints.swift in Sources */,
 				A04AD02823FA6589005BB549 /* UIFont+Scale.swift in Sources */,
+				A0FAAEDC2410FD2A000A77D9 /* SplashScreenView.swift in Sources */,
 				A04AD02423FA64B0005BB549 /* CanvasViewController.swift in Sources */,
 				A0BD1CE323FBBF1600BDA585 /* ScalePoint.swift in Sources */,
 				A04AD03623FBBCB2005BB549 /* CanvasDrawRectangleButtonView.swift in Sources */,
 				A04AD01323FA636D005BB549 /* Rocket.xcdatamodeld in Sources */,
+				A066B41D24116F350019C931 /* ZeplinOauthHandler.swift in Sources */,
+				A0F47245240F400000D2AD84 /* ZeplinToken.swift in Sources */,
 				A00CC6AF23FBBFC900A1AE0B /* UIView+DropShadow.swift in Sources */,
 				A00CC6B323FBEDB500A1AE0B /* ScalableView.swift in Sources */,
 			);
@@ -473,7 +575,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rocket.app.Rocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -492,7 +594,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rocket.app.Rocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

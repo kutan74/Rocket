@@ -6,5 +6,7 @@ target 'Rocket' do
   use_frameworks!
 
   # Pods for Rocket
+  pod 'Moya', '~> 14.0'
+  pod 'OAuthSwift', '~> 2.0.0'
 
 end
