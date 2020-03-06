@@ -10,7 +10,7 @@ import UIKit
 
 class AuthenticateWithZeplinViewController: UIViewController {
     private let subView = AuthenticateWithZeplinView()
-    
+    private let zeplinAuthHandler = ZeplinOauthHandler()
     
     override func loadView() {
         view = UIView()
@@ -35,8 +35,16 @@ extension AuthenticateWithZeplinViewController {
 
 // MARK: Tap Actions
 
-extension AuthenticateWithZeplinViewController {
+extension AuthenticateWithZeplinViewController: ZeplinOauthHandlerDelegate {
     @objc func handleConnectToZeplinButtonAction() {
-
+        addChild(zeplinAuthHandler)
+        zeplinAuthHandler.delegate = self
+        zeplinAuthHandler.getZeplinAccessToken()
+    }
+    
+    func didReceiveAccessToken(accessToken: String) {
+        let controller = ZeplinSelectProjectViewController(accessToken: accessToken)
+        controller.modalPresentationStyle = .fullScreen
+        self.present(controller, animated: true, completion: nil)
     }
 }

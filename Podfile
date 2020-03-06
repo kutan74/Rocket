@@ -8,5 +8,6 @@ target 'Rocket' do
   # Pods for Rocket
   pod 'Moya', '~> 14.0'
   pod 'OAuthSwift', '~> 2.0.0'
+  pod 'Kingfisher', '~> 5.0'
 
 end

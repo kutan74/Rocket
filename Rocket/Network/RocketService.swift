@@ -21,7 +21,7 @@ extension RocketService: TargetType, AccessTokenAuthorizable {
         case .projects:
             return "projects"
         case .projectScreens(let projectId):
-            return "projects/\(projectId)/screens/5e43fd33cf17278c82c818c7/versions/5e43fd33cf17278c82c818c8"
+            return "projects/\(projectId)/screens"
         }
     }
     var method: Moya.Method {

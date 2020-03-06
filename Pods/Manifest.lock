@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (5.0.2)
+  - Kingfisher (5.13.2):
+    - Kingfisher/Core (= 5.13.2)
+  - Kingfisher/Core (5.13.2)
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
   - Moya/Core (14.0.0):
@@ -7,20 +10,23 @@ PODS:
   - OAuthSwift (2.0.0)
 
 DEPENDENCIES:
+  - Kingfisher (~> 5.0)
   - Moya (~> 14.0)
   - OAuthSwift (~> 2.0.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Kingfisher
     - Moya
     - OAuthSwift
 
 SPEC CHECKSUMS:
   Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
+  Kingfisher: d342c8354c10c3d85a27d6d4c42c41285924b898
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   OAuthSwift: 6805456763cf1c7ae0c16765257ed430b7aacae7
 
-PODFILE CHECKSUM: fc1a6b3de8d16533c82f7ef970e24a4c65048633
+PODFILE CHECKSUM: ea8054393ad78df5c37035b490b87ee082952e73
 
 COCOAPODS: 1.8.4
