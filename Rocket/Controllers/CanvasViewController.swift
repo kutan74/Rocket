@@ -131,6 +131,8 @@ extension CanvasViewController {
         oauthswift.authorizeURLHandler = getURLHandler()
         let state = generateState(withLength: 20)
         
+        //oauthswift.client.credential.isTokenExpired()
+        
         let _ = oauthswift.authorize(
             withCallbackURL: URL(string: "com.rocket.app.Rocket://zeplin-auth")!,
             scope: "",

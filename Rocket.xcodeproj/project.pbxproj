@@ -28,6 +28,10 @@
 		A04AD03A23FBBCD2005BB549 /* CanvasRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AD03923FBBCD2005BB549 /* CanvasRectangle.swift */; };
 		A066B41A24113C400019C931 /* ConnecToZeplinButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066B41924113C400019C931 /* ConnecToZeplinButton.swift */; };
 		A066B41D24116F350019C931 /* ZeplinOauthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066B41C24116F350019C931 /* ZeplinOauthHandler.swift */; };
+		A0A38AD42413980900D76FDA /* ChangableFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A38AD32413980900D76FDA /* ChangableFont.swift */; };
+		A0A38AD62413C96400D76FDA /* ReusableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A38AD52413C96400D76FDA /* ReusableDataSource.swift */; };
+		A0A38AD92416397000D76FDA /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A38AD82416397000D76FDA /* Networking.swift */; };
+		A0A38ADB2416A13A00D76FDA /* ZeplinLayeredGroupParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A38ADA2416A13A00D76FDA /* ZeplinLayeredGroupParser.swift */; };
 		A0BD1CE323FBBF1600BDA585 /* ScalePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BD1CE223FBBF1600BDA585 /* ScalePoint.swift */; };
 		A0C3A7DA241225410076F695 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3A7D9241225410076F695 /* UIViewController+Child.swift */; };
 		A0C3A7DD241225B60076F695 /* ZeplinSelectProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3A7DC241225B60076F695 /* ZeplinSelectProjectViewController.swift */; };
@@ -41,6 +45,16 @@
 		A0C3A7EF24123BAA0076F695 /* ZeplinSelectScreenDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3A7EE24123BAA0076F695 /* ZeplinSelectScreenDataLoader.swift */; };
 		A0C3A7F124123DA60076F695 /* ZeplinScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3A7F024123DA60076F695 /* ZeplinScreen.swift */; };
 		A0C3A7F32412400B0076F695 /* ZeplinSelectScreenDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3A7F22412400B0076F695 /* ZeplinSelectScreenDataSource.swift */; };
+		A0C3A7F5241243400076F695 /* ZeplinScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3A7F4241243400076F695 /* ZeplinScreenCollectionViewCell.swift */; };
+		A0C3A7F8241259BD0076F695 /* ZeplinSelectComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3A7F7241259BD0076F695 /* ZeplinSelectComponentsViewController.swift */; };
+		A0C3A7FA24125A540076F695 /* ZeplinSelectComponentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3A7F924125A540076F695 /* ZeplinSelectComponentsView.swift */; };
+		A0C3A7FC24125B070076F695 /* ZeplinSelectComponentsDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3A7FB24125B070076F695 /* ZeplinSelectComponentsDataLoader.swift */; };
+		A0C3A7FE24125D2A0076F695 /* ZeplinScreenVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3A7FD24125D2A0076F695 /* ZeplinScreenVersion.swift */; };
+		A0C3A800241266080076F695 /* ZeplinScreenComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3A7FF241266080076F695 /* ZeplinScreenComponents.swift */; };
+		A0C3A802241267830076F695 /* ZeplinTextComponentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3A801241267830076F695 /* ZeplinTextComponentParser.swift */; };
+		A0C3A80424127D660076F695 /* ZeplinComponentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3A80324127D660076F695 /* ZeplinComponentCollectionViewCell.swift */; };
+		A0C3A80624127DEC0076F695 /* ZeplinSelectComponentsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3A80524127DEC0076F695 /* ZeplinSelectComponentsDataSource.swift */; };
+		A0C3A809241386F40076F695 /* ZeplinLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3A808241386F40076F695 /* ZeplinLabelView.swift */; };
 		A0F47245240F400000D2AD84 /* ZeplinToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F47244240F400000D2AD84 /* ZeplinToken.swift */; };
 		A0FAAEDA2410FD0A000A77D9 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FAAED92410FD0A000A77D9 /* SplashScreenViewController.swift */; };
 		A0FAAEDC2410FD2A000A77D9 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FAAEDB2410FD2A000A77D9 /* SplashScreenView.swift */; };
@@ -75,6 +89,10 @@
 		A04AD03923FBBCD2005BB549 /* CanvasRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasRectangle.swift; sourceTree = "<group>"; };
 		A066B41924113C400019C931 /* ConnecToZeplinButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnecToZeplinButton.swift; sourceTree = "<group>"; };
 		A066B41C24116F350019C931 /* ZeplinOauthHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeplinOauthHandler.swift; sourceTree = "<group>"; };
+		A0A38AD32413980900D76FDA /* ChangableFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangableFont.swift; sourceTree = "<group>"; };
+		A0A38AD52413C96400D76FDA /* ReusableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableDataSource.swift; sourceTree = "<group>"; };
+		A0A38AD82416397000D76FDA /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		A0A38ADA2416A13A00D76FDA /* ZeplinLayeredGroupParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeplinLayeredGroupParser.swift; sourceTree = "<group>"; };
 		A0BD1CE223FBBF1600BDA585 /* ScalePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalePoint.swift; sourceTree = "<group>"; };
 		A0C3A7D9241225410076F695 /* UIViewController+Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
 		A0C3A7DC241225B60076F695 /* ZeplinSelectProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeplinSelectProjectViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +106,16 @@
 		A0C3A7EE24123BAA0076F695 /* ZeplinSelectScreenDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeplinSelectScreenDataLoader.swift; sourceTree = "<group>"; };
 		A0C3A7F024123DA60076F695 /* ZeplinScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeplinScreen.swift; sourceTree = "<group>"; };
 		A0C3A7F22412400B0076F695 /* ZeplinSelectScreenDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeplinSelectScreenDataSource.swift; sourceTree = "<group>"; };
+		A0C3A7F4241243400076F695 /* ZeplinScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeplinScreenCollectionViewCell.swift; sourceTree = "<group>"; };
+		A0C3A7F7241259BD0076F695 /* ZeplinSelectComponentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeplinSelectComponentsViewController.swift; sourceTree = "<group>"; };
+		A0C3A7F924125A540076F695 /* ZeplinSelectComponentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeplinSelectComponentsView.swift; sourceTree = "<group>"; };
+		A0C3A7FB24125B070076F695 /* ZeplinSelectComponentsDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeplinSelectComponentsDataLoader.swift; sourceTree = "<group>"; };
+		A0C3A7FD24125D2A0076F695 /* ZeplinScreenVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeplinScreenVersion.swift; sourceTree = "<group>"; };
+		A0C3A7FF241266080076F695 /* ZeplinScreenComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeplinScreenComponents.swift; sourceTree = "<group>"; };
+		A0C3A801241267830076F695 /* ZeplinTextComponentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeplinTextComponentParser.swift; sourceTree = "<group>"; };
+		A0C3A80324127D660076F695 /* ZeplinComponentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeplinComponentCollectionViewCell.swift; sourceTree = "<group>"; };
+		A0C3A80524127DEC0076F695 /* ZeplinSelectComponentsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeplinSelectComponentsDataSource.swift; sourceTree = "<group>"; };
+		A0C3A808241386F40076F695 /* ZeplinLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeplinLabelView.swift; sourceTree = "<group>"; };
 		A0F47244240F400000D2AD84 /* ZeplinToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeplinToken.swift; sourceTree = "<group>"; };
 		A0FAAED92410FD0A000A77D9 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		A0FAAEDB2410FD2A000A77D9 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
@@ -137,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				A00CC6B824069D9900A1AE0B /* RocketService.swift */,
+				A0A38AD82416397000D76FDA /* Networking.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -162,6 +191,7 @@
 		A04AD00723FA636D005BB549 /* Rocket */ = {
 			isa = PBXGroup;
 			children = (
+				A0A38AD2241397FE00D76FDA /* Utils */,
 				A066B41B24116F270019C931 /* LogicHandlers */,
 				A00CC6B724069D8D00A1AE0B /* Network */,
 				A00CC6B423FBEE4100A1AE0B /* Protocols */,
@@ -279,6 +309,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		A0A38AD2241397FE00D76FDA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A0A38AD32413980900D76FDA /* ChangableFont.swift */,
+				A0A38AD52413C96400D76FDA /* ReusableDataSource.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		A0BD1CE123FBBF0100BDA585 /* CanvasRectangle */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,8 +329,10 @@
 		A0BD1CE423FBBF1A00BDA585 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A0C3A807241386EA0076F695 /* ZeplinComponentViews */,
 				A0BD1CE223FBBF1600BDA585 /* ScalePoint.swift */,
 				A00CC6B223FBEDB500A1AE0B /* ScalableView.swift */,
+				A0C3A80324127D660076F695 /* ZeplinComponentCollectionViewCell.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -313,6 +354,8 @@
 			children = (
 				A0C3A7E324122C370076F695 /* ZeplinProject.swift */,
 				A0C3A7F024123DA60076F695 /* ZeplinScreen.swift */,
+				A0C3A7FD24125D2A0076F695 /* ZeplinScreenVersion.swift */,
+				A0C3A7FF241266080076F695 /* ZeplinScreenComponents.swift */,
 			);
 			path = ZeplinModels;
 			sourceTree = "<group>";
@@ -324,13 +367,36 @@
 				A0C3A7EC24123A620076F695 /* ZeplinSelectScreenView.swift */,
 				A0C3A7EE24123BAA0076F695 /* ZeplinSelectScreenDataLoader.swift */,
 				A0C3A7F22412400B0076F695 /* ZeplinSelectScreenDataSource.swift */,
+				A0C3A7F4241243400076F695 /* ZeplinScreenCollectionViewCell.swift */,
 			);
 			name = ZeplinScreenSelection;
+			sourceTree = "<group>";
+		};
+		A0C3A7F62412599B0076F695 /* ZeplinSelectComponents */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3A7F7241259BD0076F695 /* ZeplinSelectComponentsViewController.swift */,
+				A0C3A7F924125A540076F695 /* ZeplinSelectComponentsView.swift */,
+				A0C3A7FB24125B070076F695 /* ZeplinSelectComponentsDataLoader.swift */,
+				A0C3A801241267830076F695 /* ZeplinTextComponentParser.swift */,
+				A0C3A80524127DEC0076F695 /* ZeplinSelectComponentsDataSource.swift */,
+				A0A38ADA2416A13A00D76FDA /* ZeplinLayeredGroupParser.swift */,
+			);
+			path = ZeplinSelectComponents;
+			sourceTree = "<group>";
+		};
+		A0C3A807241386EA0076F695 /* ZeplinComponentViews */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3A808241386F40076F695 /* ZeplinLabelView.swift */,
+			);
+			path = ZeplinComponentViews;
 			sourceTree = "<group>";
 		};
 		A0FAAED82410FD00000A77D9 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				A0C3A7F62412599B0076F695 /* ZeplinSelectComponents */,
 				A0C3A7E924123A2D0076F695 /* ZeplinScreenSelection */,
 				A0C3A7DB241225A80076F695 /* ZeplinProjectSelection */,
 				A0FAAEE02410FE93000A77D9 /* ZeplinAuthOnboarding */,
@@ -474,18 +540,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04AD00923FA636D005BB549 /* AppDelegate.swift in Sources */,
+				A0C3A800241266080076F695 /* ZeplinScreenComponents.swift in Sources */,
 				A0FAAEE22410FEA0000A77D9 /* AuthenticateWithZeplinViewController.swift in Sources */,
 				A0C3A7DF241226930076F695 /* ZeplinSelectProjectView.swift in Sources */,
+				A0C3A802241267830076F695 /* ZeplinTextComponentParser.swift in Sources */,
 				A04AD03423FBBBCB005BB549 /* ArtboardView.swift in Sources */,
 				A0FAAEDA2410FD0A000A77D9 /* SplashScreenViewController.swift in Sources */,
 				A066B41A24113C400019C931 /* ConnecToZeplinButton.swift in Sources */,
 				A0C3A7DA241225410076F695 /* UIViewController+Child.swift in Sources */,
 				A04AD00B23FA636D005BB549 /* SceneDelegate.swift in Sources */,
 				A04AD02C23FA68B8005BB549 /* CanvasView.swift in Sources */,
+				A0A38ADB2416A13A00D76FDA /* ZeplinLayeredGroupParser.swift in Sources */,
 				A0C3A7E8241231900076F695 /* ZeplinSelectProjectDataSource.swift in Sources */,
+				A0C3A7FC24125B070076F695 /* ZeplinSelectComponentsDataLoader.swift in Sources */,
 				A04AD02A23FA689B005BB549 /* CanvasElementsView.swift in Sources */,
+				A0C3A80424127D660076F695 /* ZeplinComponentCollectionViewCell.swift in Sources */,
+				A0C3A809241386F40076F695 /* ZeplinLabelView.swift in Sources */,
 				A00CC6B623FBEE4800A1AE0B /* Scaleable.swift in Sources */,
 				A0C3A7EF24123BAA0076F695 /* ZeplinSelectScreenDataLoader.swift in Sources */,
+				A0C3A80624127DEC0076F695 /* ZeplinSelectComponentsDataSource.swift in Sources */,
 				A0C3A7F124123DA60076F695 /* ZeplinScreen.swift in Sources */,
 				A0FAAEE42410FECF000A77D9 /* AuthenticateWithZeplinView.swift in Sources */,
 				A04AD03A23FBBCD2005BB549 /* CanvasRectangle.swift in Sources */,
@@ -500,14 +573,21 @@
 				A04AD02823FA6589005BB549 /* UIFont+Scale.swift in Sources */,
 				A0FAAEDC2410FD2A000A77D9 /* SplashScreenView.swift in Sources */,
 				A0C3A7F32412400B0076F695 /* ZeplinSelectScreenDataSource.swift in Sources */,
+				A0A38AD62413C96400D76FDA /* ReusableDataSource.swift in Sources */,
 				A04AD02423FA64B0005BB549 /* CanvasViewController.swift in Sources */,
+				A0C3A7FE24125D2A0076F695 /* ZeplinScreenVersion.swift in Sources */,
 				A0C3A7E1241227590076F695 /* ZeplinSelectProjectDataLoader.swift in Sources */,
 				A0BD1CE323FBBF1600BDA585 /* ScalePoint.swift in Sources */,
 				A04AD03623FBBCB2005BB549 /* CanvasDrawRectangleButtonView.swift in Sources */,
 				A04AD01323FA636D005BB549 /* Rocket.xcdatamodeld in Sources */,
 				A066B41D24116F350019C931 /* ZeplinOauthHandler.swift in Sources */,
+				A0A38AD92416397000D76FDA /* Networking.swift in Sources */,
 				A0F47245240F400000D2AD84 /* ZeplinToken.swift in Sources */,
+				A0C3A7FA24125A540076F695 /* ZeplinSelectComponentsView.swift in Sources */,
+				A0C3A7F8241259BD0076F695 /* ZeplinSelectComponentsViewController.swift in Sources */,
+				A0C3A7F5241243400076F695 /* ZeplinScreenCollectionViewCell.swift in Sources */,
 				A00CC6AF23FBBFC900A1AE0B /* UIView+DropShadow.swift in Sources */,
+				A0A38AD42413980900D76FDA /* ChangableFont.swift in Sources */,
 				A00CC6B323FBEDB500A1AE0B /* ScalableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

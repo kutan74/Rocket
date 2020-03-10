@@ -12,6 +12,8 @@ import Moya
 enum RocketService {
     case projects
     case projectScreens(projectId: String)
+    case screenVersion(projectId: String,screenId: String)
+    case screen(projectId: String, screenId: String, screenVersionId: String)
 }
 
 extension RocketService: TargetType, AccessTokenAuthorizable {
@@ -22,13 +24,17 @@ extension RocketService: TargetType, AccessTokenAuthorizable {
             return "projects"
         case .projectScreens(let projectId):
             return "projects/\(projectId)/screens"
+        case .screenVersion(let projectId, let screenId):
+            return "projects/\(projectId)/screens/\(screenId)/versions"
+        case .screen(let projectId, let screenId, let screenVersionId):
+            return "projects/\(projectId)/screens/\(screenId)/versions/\(screenVersionId)"
         }
     }
     var method: Moya.Method {
         switch self {
         case .projects:
             return .get
-        case .projectScreens(_):
+        case .projectScreens(_), .screenVersion(_, _), .screen(_, _, _):
             return .get
         }
     }
@@ -36,7 +42,7 @@ extension RocketService: TargetType, AccessTokenAuthorizable {
         switch self {
         case .projects:
             return .requestPlain
-        case .projectScreens(_):
+        case .projectScreens(_), .screenVersion(_, _), .screen(_, _, _):
             return .requestPlain
         }
     }

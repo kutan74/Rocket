@@ -10,9 +10,9 @@ import Foundation
 
 struct ZeplinScreen: Codable {
     let id: String
-    //let created: Int
-    //let name: String
-    //let image: ZeplinScreenImage
+    let created: Int
+    let name: String
+    let image: ZeplinScreenImage
 }
 
 struct ZeplinScreenImage: Codable {

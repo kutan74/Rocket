@@ -55,6 +55,7 @@ extension ZeplinSelectScreenViewController {
             switch result {
             case .success(let screens):
                 self.screens = screens
+                self.configureDataSource()
             case .failure(let error):
                 break
             }
@@ -67,8 +68,19 @@ extension ZeplinSelectScreenViewController {
 extension ZeplinSelectScreenViewController {
     func configureDataSource() {
         dataSource = ZeplinSelectScreenDataSource(screens: screens)
+        dataSource.delegate = self
         subView.collectionView.dataSource = dataSource
         subView.collectionView.delegate = dataSource
         subView.collectionView.reloadData()
+    }
+}
+
+// MARK: Zeplin Screen Selection Delegate
+
+extension ZeplinSelectScreenViewController: ZeplinSelectScreenDataSourceProtocol {
+    func didSelectScreen(forId id: String) {
+        let controller = ZeplinSelectComponentsViewController(screenId: id, projectId: projectId, accessToken: accessToken)
+        controller.modalPresentationStyle = .fullScreen
+        present(controller, animated: true, completion: nil)
     }
 }

@@ -8,8 +8,13 @@
 
 import UIKit
 
+protocol ZeplinSelectScreenDataSourceProtocol: class {
+    func didSelectScreen(forId id: String)
+}
+
 class ZeplinSelectScreenDataSource: NSObject {
     var screens: [ZeplinScreen]
+    weak var delegate: ZeplinSelectScreenDataSourceProtocol?
     
     init(screens: [ZeplinScreen]) {
         self.screens = screens
@@ -24,7 +29,16 @@ extension ZeplinSelectScreenDataSource: UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ZeplinScreenCollectionViewCell
+        
+        let screen = screens[indexPath.row]
+        cell.thumnailImageView.kf.setImage(with: URL(string: screen.image.original_url))
+        cell.screenNameLabel.text = screen.name
+        
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.didSelectScreen(forId: screens[indexPath.row].id)
     }
 }
